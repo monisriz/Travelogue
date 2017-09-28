@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+{{ city|capitalize }}
+{% endblock %}
+
+
+
+
+{% block headerimg %}
+<img src="static/images/{{ city }}.jpg" height="400px" width="100%">
+{% endblock %}
+
+{{ city|capitalize }}
+
+{% block info %}
+<p>Singapore, officially the Republic of Singapore, sometimes referred to as the "Lion City", the "Garden City" or the "Little Red Dot", is a sovereign city-state in Southeast Asia. It lies one degree (137 km) north of the equator, at the southern tip of the Malay Peninsula, with Indonesia's Riau Islands to the south. Singapore's territory consists of one main island along with 62 other islets. Since independence, extensive land reclamation has increased its total size by 23% (130 km2) and its greening policy has covered the densely populated island with tropical flora, parks and gardens.</p>
+
+<p>Stamford Raffles founded colonial Singapore in 1819 as a trading post of the East India Company, but after its collapse and the eventual establishment of the British Raj, the islands were ceded to Britain and became part of its Straits Settlements in 1826. During the Second World War, Singapore was occupied by Japan. It gained independence from the UK in 1963 by federating with other former British territories to form Malaysia, but separated two years later over ideological differences, becoming a sovereign nation in 1965. After early years of turbulence and despite lacking natural resources and a hinterland, the nation developed rapidly as an Asian Tiger economy, based on external trade and its workforce.</p>
+
+<p>Singapore ranks 5th on the UN Human Development Index and the 3rd highest GDP per capita. It is ranked highly in education, healthcare, life expectancy, quality of life, personal safety and housing. Although income inequality is high, 90% of homes are owner-occupied. 38% of Singapore's 5.6 million residents are permanent residents and other foreign nationals. There are four official languages: English (common and first language), Malay, Mandarin and Tamil, though almost all Singaporeans are bilingual.</p>
+{% endblock %}
