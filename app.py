@@ -9,6 +9,8 @@ from jinja2 import \
 
 PORT = int(os.environ.get('PORT', '8888'))
 
+GIT_REV = os.environ.get('GIT_REV', 'NONE')
+print(GIT_REV)
 ENV = Environment(
   loader=PackageLoader('app', 'templates'),
   autoescape=select_autoescape(['html', 'xml'])
