@@ -19,6 +19,7 @@ ENV = Environment(
 class TemplateHandler(tornado.web.RequestHandler):
   def render_template (self, tpl, context):
     template = ENV.get_template(tpl)
+    context['GIT_REV'] = GIT_REV
     self.write(template.render(**context))
 
 class MainHandler(TemplateHandler):
