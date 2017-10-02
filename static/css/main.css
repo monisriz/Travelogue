@@ -106,3 +106,9 @@ a {
   color: black;
   text-decoration-color: red;
 }
+
+.page_end {
+  display: relative;
+  width: 100%;
+  height: 400px;
+}
